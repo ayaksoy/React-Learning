@@ -1,12 +1,7 @@
-import React from 'react';
+import React from "react";
 
-const Products = () => {
-	return (
-		<div>
-			<h1>Products</h1>
-			{/* Add your product list here */}
-		</div>
-	);
-};
+function Products(data) {
+	return <div>{data.title}</div>;
+}
 
 export default Products;
