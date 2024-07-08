@@ -1,11 +1,11 @@
 import React from "react";
 
-function Categories(data) {
+function Menu(veri) {
 	return (
 		<div>
-			<h2>{data.title}</h2>
+			<h1>Menu</h1>
 			<ul>
-				{data.index.map((item) => (
+				{veri.data.map((item) => (
 					<li key={item}>{item}</li>
 				))}
 			</ul>
@@ -13,4 +13,4 @@ function Categories(data) {
 	);
 }
 
-export default Categories;
+export default Menu;

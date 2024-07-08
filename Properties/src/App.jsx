@@ -14,8 +14,21 @@ function App() {
 	return (
 		<>
 			<Test title="Test Sayfasi" content="TestContent"></Test>
-			<Header title="Header Sayfasi" content = "HeaderContent"></Header>
-			<Categories title="Categories Sayfasi"></Categories>
+			<Header
+				title="Header Sayfasi"
+				content="HeaderContent"
+				menuu={["anasayfa", "babasayfa", "kardessayfa"]}
+			></Header>
+			<Categories
+				title="Categories Sayfasi"
+				index={[
+					"Meyve",
+					"Sebze",
+					"Unlu Mamuller",
+					"İçecekler",
+					"Temizlik Ürünleri",
+				]}
+			></Categories>
 			<Products title="Products Sayfasi"></Products>
 			<Footer title="Footer Sayfasi"></Footer>
 		</>
