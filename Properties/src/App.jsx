@@ -13,8 +13,8 @@ function App() {
 
 	return (
 		<>
-			<Test title="Test Sayfasi"></Test>
-			<Header title="Header Sayfasi"></Header>
+			<Test title="Test Sayfasi" content="TestContent"></Test>
+			<Header title="Header Sayfasi" content = "HeaderContent"></Header>
 			<Categories title="Categories Sayfasi"></Categories>
 			<Products title="Products Sayfasi"></Products>
 			<Footer title="Footer Sayfasi"></Footer>
