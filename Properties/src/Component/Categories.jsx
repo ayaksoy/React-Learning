@@ -1,14 +1,13 @@
 import React from "react";
+import Category from "./Category";
 
-function Categories(data) {
+function Categories(veri) {
 	return (
 		<div>
-			<h2>{data.title}</h2>
-			<ul>
-				{data.index.map((item) => (
-					<li key={item}>{item}</li>
-				))}
-			</ul>
+			<h2>{veri.title}</h2>
+			{veri.index.map((item) => (
+					<Category title={item} />
+			))}
 		</div>
 	);
 }
