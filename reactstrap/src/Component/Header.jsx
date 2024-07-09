@@ -16,24 +16,26 @@ const Header = (props) => {
 		setIsOpen(!isOpen);
 	};
 	return (
+
+
 		<Navbar color="light" light expand="md">
-			<NavbarBrand href="/">Ec</NavbarBrand>
-			<NavbarToggler onClick={toggle}>
-				<Collapse isOpen={isOpen} navbar>
-					<Nav className="mr-auto" navbar>
-						<NavItem>
-							<NavLink href="/components/">Components</NavLink>
-						</NavItem>
-						<NavItem>
-							<NavLink href="https//github.com" target="blank">
-								Github
-							</NavLink>
-						</NavItem>
-						<Card card={props.card} removeFromCard={props.removeFromCard} />
-					</Nav>
-				</Collapse>
-			</NavbarToggler>
-		</Navbar>
+		<NavbarBrand href="/">Ec</NavbarBrand>
+		<NavbarToggler onClick={toggle}>
+			<Collapse isOpen={isOpen} navbar>
+				<Nav className="mr-auto" navbar>
+					<NavItem>
+						<NavLink href="/components/">Components</NavLink>
+					</NavItem>
+					<NavItem>
+						<NavLink href="https//github.com" target="blank">
+							Github
+						</NavLink>
+					</NavItem>
+					<Card card={props.card} removeFromCard={props.removeFromCard} />
+				</Nav>
+			</Collapse>
+		</NavbarToggler>
+	</Navbar>
 	);
 };
 
