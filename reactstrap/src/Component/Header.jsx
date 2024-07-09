@@ -9,7 +9,7 @@ import {
 } from "reactstrap";
 import Card from "./Card";
 
-const Header = () => {
+const Header = (props) => {
 	const [isOpen, setIsOpen] = useState(false);
 
 	const toggle = () => {
@@ -29,6 +29,7 @@ const Header = () => {
 								Github
 							</NavLink>
 						</NavItem>
+						<Card card={props.card} removeFromCard={props.removeFromCard} />
 					</Nav>
 				</Collapse>
 			</NavbarToggler>
