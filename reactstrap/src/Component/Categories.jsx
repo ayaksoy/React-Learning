@@ -11,9 +11,21 @@ const Categories = (props) => {
 		fetch("http://localhost:3000/categories")
 			.then((response) => response.json())
 			.then((data) => setCategories(data));
-			
 	};
-	return <></>;
+	return (
+		<ListGroup>
+			{categories.map((category) => (
+				<ListGroupItem
+					active={category.categorName === props.currentCategory ? true : false}
+					key={category.id}
+					onClick={() => props.changeCategory(category)}
+				>
+					{category.categorName}
+				</ListGroupItem>
+			))}
+			;
+		</ListGroup>
+	);
 };
 
 export default Categories;
