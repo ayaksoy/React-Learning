@@ -1,20 +1,12 @@
 //import "bootstrap/dist/css/bootstrap.min.css";
 import { Container, Row, ListGroup, ListGroupItem } from "reactstrap";
+import Card from "./Components/Card";
+import Header from "./Components/Header";
 function App() {
-	const categories = [
-		{ id: 1, name: "Kategori 1" },
-		{ id: 2, name: "Kategori 2" },
-		{ id: 3, name: "Kategori 3" },
-	];
 	return (
 		<Container>
 			<Row>
-				<h1>Kategoriler</h1>
-				<ListGroup>
-					{categories.map((category) => (
-						<ListGroupItem active>{category.name}</ListGroupItem>
-					))}
-				</ListGroup>
+				<Header></Header>
 			</Row>
 		</Container>
 	);
