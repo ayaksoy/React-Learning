@@ -10,13 +10,13 @@ const App = () => {
 	const title = "Title";
 	return (
 		<Container>
-			<Header title={title} />
+			<Header />
 			<Row>
 				<Col xs="3">
-					<Categories title={title} />
+					<Categories />
 				</Col>
 				<Col xs="9">
-					<Products title={title} />
+					<Products />
 				</Col>
 			</Row>
 		</Container>

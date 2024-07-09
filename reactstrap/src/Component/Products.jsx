@@ -1,7 +1,7 @@
 function Products(Data) {
 	return (
 		<div>
-			<h1>{Data.title}</h1>
+			<h1>aaaa</h1>
 		</div>
 	);
 }

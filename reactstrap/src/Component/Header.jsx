@@ -1,9 +1,39 @@
-function Header(data) {
+import {
+	Collapse,
+	Navbar,
+	NavbarToggler,
+	NavbarBrand,
+	Nav,
+	NavItem,
+	NavLink,
+} from "reactstrap";
+import Card from "./Card";
+
+const Header = () => {
+	const [isOpen, setIsOpen] = useState(false);
+
+	const toggle = () => {
+		setIsOpen(!isOpen);
+	};
 	return (
-		<div>
-			<h1>{data.title}</h1>
-		</div>
+		<Navbar color="light" light expand="md">
+			<NavbarBrand href="/">Ec</NavbarBrand>
+			<NavbarToggler onClick={toggle}>
+				<Collapse isOpen={isOpen} navbar>
+					<Nav className="mr-auto" navbar>
+						<NavItem>
+							<NavLink href="/components/">Components</NavLink>
+						</NavItem>
+						<NavItem>
+							<NavLink href="https//github.com" target="blank">
+								Github
+							</NavLink>
+						</NavItem>
+					</Nav>
+				</Collapse>
+			</NavbarToggler>
+		</Navbar>
 	);
-}
+};
 
 export default Header;
