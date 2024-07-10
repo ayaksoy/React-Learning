@@ -16,14 +16,15 @@ const Categories = (props) => {
 		<ListGroup>
 			{categories.map((category) => (
 				<ListGroupItem
-					active={category.categorName === props.currentCategory ? true : false}
+					active={
+						category.categoryName === props.currentCategory ? true : false
+					}
 					key={category.id}
 					onClick={() => props.changeCategory(category)}
 				>
-					{category.categorName}
+					{category.categoryName}
 				</ListGroupItem>
 			))}
-			;
 		</ListGroup>
 	);
 };

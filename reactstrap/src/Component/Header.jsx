@@ -8,6 +8,7 @@ import {
 	NavLink,
 } from "reactstrap";
 import Card from "./Card";
+import React, { useState } from "react";
 
 const Header = (props) => {
 	const [isOpen, setIsOpen] = useState(false);

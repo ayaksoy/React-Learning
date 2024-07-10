@@ -11,7 +11,7 @@ const Card = (props) => {
 			<DropdownToggle nav caret>
 				{props.card.length}
 			</DropdownToggle>
-			<DropdownMenu right>
+			<DropdownMenu end>
 				{props.card.map((cardItem) => (
 					<DropdownItem key={cardItem.product.id}>
 						{cardItem.product.id}
