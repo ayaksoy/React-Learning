@@ -13,7 +13,7 @@ function App() {
 
 	useEffect(() => {
 		fetchCategories();
-    fetchProducts();
+		fetchProducts();
 	}, []);
 	const fetchProducts = () => {
 		let url = "http://localhost:3000/products";
@@ -23,23 +23,24 @@ function App() {
 	};
 
 	return (
-		<>
-			<h1>Hello World</h1>
-			<div style={{ width: "20%" }}>
+		<div style={{ display: "flex" }}>
+			<div style={{ width: "40%" }}>
+				<h1>Kategoriler</h1>
 				<ul>
 					{categories.map((category) => (
 						<li>{category.categoryName}</li>
 					))}
 				</ul>
 			</div>
-			<div style={{ width: "20%" }}>
-				<ul>
-					{products.map((product) => (
-						<li>{product.productName}</li>
-					))}
-				</ul>
+			<div style={{ width: "40%" }}>
+				<h1>Products</h1>
+				{products.map((product) => (
+					<div>
+						{product.categoryId} - {product.productName}
+					</div>
+				))}
 			</div>
-		</>
+		</div>
 	);
 }
 
