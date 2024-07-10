@@ -4,6 +4,12 @@ function App() {
 	const [kategoriler, setKategoriler] = useState([]);
 	const [urunler, setUrunler] = useState([]);
 	const [sepet, setSepet] = useState([]);
+	const [seciliKategori, setSeciliKategori] = useState("");
+
+	const kategoriDegistir = (kategori) => {
+		setSeciliKategori(kategori.categoryName);
+		urunlercek(kategori.id);
+	};
 
 	const kategoricek = () => {
 		let url = "http://localhost:3000/categories";
@@ -68,20 +74,25 @@ function App() {
 
 	return (
 		<>
-			<h1>Hello World</h1>
 			<div style={{ display: "flex" }}>
 				<div style={{ width: "30%" }}>
 					<h2>Kategoriler</h2>
 					<ul>
 						{kategoriler.map((kategori) => (
-							<li key={kategori.id}>
+							<button
+								key={kategori.id}
+								onClick={() => kategoriDegistir(kategori)}
+							>
 								{kategori.id} - {kategori.categoryName}
-							</li>
+							</button>
 						))}
 					</ul>
 				</div>
-				<div style={{ width: "40%" }}>
-					<h2>Ürünler</h2>
+				<div style={{ width: "50%" }}>
+					<h2>
+						{seciliKategori} <br />
+						Ürünleri
+					</h2>
 					{urunler.map((urun) => (
 						<div
 							key={urun.id}
