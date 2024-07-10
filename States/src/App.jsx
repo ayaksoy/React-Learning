@@ -1,12 +1,40 @@
+import {
+	Button,
+	Collapse,
+	Container,
+	Navbar,
+	NavbarBrand,
+	NavbarToggler,
+	Nav,
+	NavItem,
+	NavLink,
+	UncontrolledDropdown,
+	DropdownToggle,
+	DropdownMenu,
+	DropdownItem,
+	ListGroup,
+	ListGroupItem,
+	Card,
+	CardImg,
+	CardBody,
+	CardTitle,
+	CardText,
+	CardGroup,
+	Col,
+	Row,
+} from "reactstrap";
 import { useState, useEffect } from "react";
 
 function App() {
 	const [kategoriler, setKategoriler] = useState([]);
 	const [urunler, setUrunler] = useState([]);
 	const [sepet, setSepet] = useState([]);
-	const [seciliKategori, setSeciliKategori] = useState("");
+	const [secilikategori, setSeciliKategori] = useState("");
+	const [isOpen, setIsOpen] = useState(false);
 
-	const kategoriDegistir = (kategori) => {
+	const toggle = () => setIsOpen(!isOpen);
+
+	const kategoridegister = (kategori) => {
 		setSeciliKategori(kategori.categoryName);
 		urunlercek(kategori.id);
 	};
@@ -24,10 +52,10 @@ function App() {
 			.catch((error) => console.error("Error fetching categories:", error));
 	};
 
-	const urunlercek = (katagoriId) => {
+	const urunlercek = (kategoriId = "") => {
 		let url = "http://localhost:3000/products";
-		if (katagoriId) {
-			url += `?categoryId=${katagoriId}`;
+		if (kategoriId) {
+			url += `?categoryId=${kategoriId}`;
 		}
 		fetch(url)
 			.then((response) => {
@@ -41,8 +69,8 @@ function App() {
 	};
 
 	useEffect(() => {
-		urunlercek();
 		kategoricek();
+		urunlercek();
 	}, []);
 
 	const sepeteEkle = (urun) => {
@@ -77,7 +105,86 @@ function App() {
 
 	return (
 		<>
-
+			<Container fluid>
+				<Navbar color="light" light expand="md">
+					<NavbarBrand href="/">Erhan</NavbarBrand>
+					<NavbarToggler onClick={toggle} />
+					<Collapse isOpen={isOpen} navbar>
+						<Nav className="ml-auto" navbar>
+							<NavItem>
+								<NavLink href="#" target="_blank">
+									Erhan
+								</NavLink>
+							</NavItem>
+							<UncontrolledDropdown nav inNavbar>
+								<DropdownToggle nav caret>
+									sepet - {sepet.length}
+								</DropdownToggle>
+								<DropdownMenu end>
+									{sepet.map((urun) => (
+										<DropdownItem key={urun.urun.id}>
+											<span
+												onClick={() => sepetguncelle(urun.urun, "arttir")}
+												style={{ marginRight: "10px", cursor: "pointer" }}
+											>
+												+
+											</span>
+											{urun.urun.productName}
+											<span
+												onClick={() => sepetguncelle(urun.urun, "azalt")}
+												style={{ marginLeft: "10px", cursor: "pointer" }}
+											>
+												-
+											</span>
+										</DropdownItem>
+									))}
+									<DropdownItem divider />
+									<DropdownItem>Sıfırla</DropdownItem>
+								</DropdownMenu>
+							</UncontrolledDropdown>
+						</Nav>
+					</Collapse>
+				</Navbar>
+				<Row>
+					<Col xs="3">
+						<ListGroup>
+							{kategoriler.map((kategori) => (
+								<ListGroupItem
+									active={kategori.categoryName === secilikategori}
+									key={kategori.id}
+									onClick={() => kategoridegister(kategori)}
+								>
+									{kategori.categoryName}
+								</ListGroupItem>
+							))}
+						</ListGroup>
+					</Col>
+					<Col xs="9">
+						<h2>{secilikategori}</h2>
+						<CardGroup>
+							{urunler.map((urun) => (
+								<Col xs="3" key={urun.id}>
+									<Card style={{ marginLeft: "10px", marginRight: "10px" }}>
+										<CardImg
+											top
+											width="100%"
+											src={urun.image}
+											alt={urun.productName}
+										/>
+										<CardBody>
+											<CardTitle>{urun.productName}</CardTitle>
+											<CardText>{urun.desc}</CardText>
+											<Button onClick={() => sepeteEkle(urun)}>
+												Sepete Ekle
+											</Button>
+										</CardBody>
+									</Card>
+								</Col>
+							))}
+						</CardGroup>
+					</Col>
+				</Row>
+			</Container>
 		</>
 	);
 }
