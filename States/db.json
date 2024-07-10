@@ -1,0 +1,256 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "categoryId": 1,
+      "productName": "iPhone 13",
+      "image": "images/product.jpg",
+      "desc": "Apple'ın en yeni akıllı telefonu, üstün performans ve gelişmiş kamera özellikleri sunar."
+    },
+    {
+      "id": 2,
+      "categoryId": 1,
+      "productName": "Samsung Galaxy S21",
+      "image": "images/product.jpg",
+      "desc": "Samsung'un en yeni modeli, yüksek çözünürlüklü ekran ve güçlü işlemci ile gelir."
+    },
+    {
+      "id": 3,
+      "categoryId": 1,
+      "productName": "Xiaomi Mi 11",
+      "image": "images/product.jpg",
+      "desc": "Geniş ekran ve uzun pil ömrü sunan uygun fiyatlı akıllı telefon."
+    },
+    {
+      "id": 4,
+      "categoryId": 2,
+      "productName": "iPad Pro",
+      "image": "images/product.jpg",
+      "desc": "Profesyonel kullanıcılar için tasarlanmış, yüksek performanslı tablet."
+    },
+    {
+      "id": 5,
+      "categoryId": 2,
+      "productName": "Samsung Galaxy Tab S7",
+      "image": "images/product.jpg",
+      "desc": "Yüksek çözünürlüklü ekran ve güçlü işlemciye sahip tablet."
+    },
+    {
+      "id": 6,
+      "categoryId": 2,
+      "productName": "Amazon Fire HD 10",
+      "image": "images/product.jpg",
+      "desc": "E-kitap okumak ve medya tüketimi için ideal, bütçe dostu tablet."
+    },
+    {
+      "id": 7,
+      "categoryId": 3,
+      "productName": "MacBook Pro",
+      "image": "images/product.jpg",
+      "desc": "Apple'ın en güçlü dizüstü bilgisayarı, profesyonel kullanıcılar için mükemmel."
+    },
+    {
+      "id": 8,
+      "categoryId": 3,
+      "productName": "Dell XPS 13",
+      "image": "images/product.jpg",
+      "desc": "Hafif ve taşınabilir, yüksek performanslı dizüstü bilgisayar."
+    },
+    {
+      "id": 9,
+      "categoryId": 3,
+      "productName": "HP Spectre x360",
+      "image": "images/product.jpg",
+      "desc": "360 derece dönebilen ekran ve uzun pil ömrü ile dikkat çeken dizüstü bilgisayar."
+    },
+    {
+      "id": 10,
+      "categoryId": 4,
+      "productName": "Nike Air Max",
+      "image": "images/product.jpg",
+      "desc": "Yüksek konfor ve şık tasarımı ile popüler spor ayakkabı."
+    },
+    {
+      "id": 11,
+      "categoryId": 4,
+      "productName": "Adidas UltraBoost",
+      "image": "images/product.jpg",
+      "desc": "Koşu için mükemmel performans sunan spor ayakkabı."
+    },
+    {
+      "id": 12,
+      "categoryId": 4,
+      "productName": "Puma RS-X",
+      "image": "images/product.jpg",
+      "desc": "Retro tasarımı ve modern teknolojisi ile dikkat çeken spor ayakkabı."
+    },
+    {
+      "id": 13,
+      "categoryId": 5,
+      "productName": "Levi's 501",
+      "image": "images/product.jpg",
+      "desc": "Klasik ve dayanıklı kot pantolon."
+    },
+    {
+      "id": 14,
+      "categoryId": 5,
+      "productName": "Wrangler Classic",
+      "image": "images/product.jpg",
+      "desc": "Günlük kullanım için uygun, rahat kot pantolon."
+    },
+    {
+      "id": 15,
+      "categoryId": 5,
+      "productName": "Lee Cooper Denim",
+      "image": "images/product.jpg",
+      "desc": "Yüksek kaliteli malzemelerden üretilmiş şık kot pantolon."
+    },
+    {
+      "id": 16,
+      "categoryId": 6,
+      "productName": "Arçelik Buzdolabı",
+      "image": "images/product.jpg",
+      "desc": "Geniş iç hacme ve enerji tasarrufu sağlayan buzdolabı."
+    },
+    {
+      "id": 17,
+      "categoryId": 6,
+      "productName": "Bosch Çamaşır Makinesi",
+      "image": "images/product.jpg",
+      "desc": "Yüksek performans ve sessiz çalışma özellikleri ile dikkat çeken çamaşır makinesi."
+    },
+    {
+      "id": 18,
+      "categoryId": 6,
+      "productName": "Philips Blender",
+      "image": "images/product.jpg",
+      "desc": "Mutfakta pratik çözümler sunan, yüksek güçlü blender."
+    },
+    {
+      "id": 19,
+      "categoryId": 7,
+      "productName": "Rolex Submariner",
+      "image": "images/product.jpg",
+      "desc": "Lüks ve prestijli bir dalış saati."
+    },
+    {
+      "id": 20,
+      "categoryId": 7,
+      "productName": "Casio G-Shock",
+      "image": "images/product.jpg",
+      "desc": "Darbe dayanıklılığı ve uzun pil ömrü ile ünlü spor saat."
+    },
+    {
+      "id": 21,
+      "categoryId": 7,
+      "productName": "Seiko 5",
+      "image": "images/product.jpg",
+      "desc": "Şık ve dayanıklı, otomatik mekanizmalı kol saati."
+    },
+    {
+      "id": 22,
+      "categoryId": 8,
+      "productName": "Canon EOS R5",
+      "image": "images/product.jpg",
+      "desc": "Profesyonel fotoğrafçılar için mükemmel bir aynasız fotoğraf makinesi."
+    },
+    {
+      "id": 23,
+      "categoryId": 8,
+      "productName": "Nikon D850",
+      "image": "images/product.jpg",
+      "desc": "Yüksek çözünürlüklü, DSLR fotoğraf makinesi."
+    },
+    {
+      "id": 24,
+      "categoryId": 8,
+      "productName": "Sony Alpha 7R IV",
+      "image": "images/product.jpg",
+      "desc": "Profesyonel çekimler için mükemmel performans sunan aynasız fotoğraf makinesi."
+    },
+    {
+      "id": 25,
+      "categoryId": 9,
+      "productName": "Kingston 16GB RAM",
+      "image": "images/product.jpg",
+      "desc": "Bilgisayar performansını artıran yüksek hızlı RAM."
+    },
+    {
+      "id": 26,
+      "categoryId": 9,
+      "productName": "Samsung 1TB SSD",
+      "image": "images/product.jpg",
+      "desc": "Hızlı veri transferi ve yüksek depolama kapasitesi sunan SSD."
+    },
+    {
+      "id": 27,
+      "categoryId": 9,
+      "productName": "Logitech G Pro Mouse",
+      "image": "images/product.jpg",
+      "desc": "Profesyonel oyuncular için tasarlanmış yüksek hassasiyetli mouse."
+    },
+    {
+      "id": 28,
+      "categoryId": 10,
+      "productName": "PlayStation 5",
+      "image": "images/product.jpg",
+      "desc": "Sony'nin en yeni oyun konsolu, yüksek performans ve grafik kalitesi sunar."
+    },
+    {
+      "id": 29,
+      "categoryId": 10,
+      "productName": "Xbox Series X",
+      "image": "images/product.jpg",
+      "desc": "Microsoft'un en yeni oyun konsolu, üstün performans ve geniş oyun kütüphanesi sunar."
+    },
+    {
+      "id": 30,
+      "categoryId": 10,
+      "productName": "Nintendo Switch",
+      "image": "images/product.jpg",
+      "desc": "Taşınabilir ve evde kullanılabilen, çok yönlü oyun konsolu."
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "categoryName": "Elektronik"
+    },
+    {
+      "id": 2,
+      "categoryName": "Bilgisayarlar ve Tabletler"
+    },
+    {
+      "id": 3,
+      "categoryName": "Giyim"
+    },
+    {
+      "id": 4,
+      "categoryName": "Ayakkabılar"
+    },
+    {
+      "id": 5,
+      "categoryName": "Saatler ve Aksesuarlar"
+    },
+    {
+      "id": 6,
+      "categoryName": "Ev Aletleri"
+    },
+    {
+      "id": 7,
+      "categoryName": "Lüks Ürünler"
+    },
+    {
+      "id": 8,
+      "categoryName": "Fotoğraf ve Kamera"
+    },
+    {
+      "id": 9,
+      "categoryName": "Bilgisayar Parçaları"
+    },
+    {
+      "id": 10,
+      "categoryName": "Oyun Konsolları"
+    }
+  ]
+}
