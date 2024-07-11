@@ -24,6 +24,10 @@ import {
 	Row,
 } from "reactstrap";
 import { useState, useEffect } from "react";
+import Ust from "./components/Ust";
+import Kategoriler from "./components/Kategoriler";
+import Urunler from "./components/Urunler";
+import Sepet from "./components/Sepet";
 
 function App() {
 	const [kategoriler, setKategoriler] = useState([]);
@@ -103,89 +107,36 @@ function App() {
 		}
 	};
 
+	const sepetSifirla = () => {
+		setSepet([]);
+	};
+
 	return (
-		<>
-			<Container fluid>
-				<Navbar color="light" light expand="md">
-					<NavbarBrand href="/">Erhan</NavbarBrand>
-					<NavbarToggler onClick={toggle} />
-					<Collapse isOpen={isOpen} navbar>
-						<Nav className="ml-auto" navbar>
-							<NavItem>
-								<NavLink href="#" target="_blank">
-									Erhan
-								</NavLink>
-							</NavItem>
-							<UncontrolledDropdown nav inNavbar>
-								<DropdownToggle nav caret>
-									sepet - {sepet.length}
-								</DropdownToggle>
-								<DropdownMenu end>
-									{sepet.map((urun) => (
-										<DropdownItem key={urun.urun.id}>
-											<span
-												onClick={() => sepetguncelle(urun.urun, "arttir")}
-												style={{ marginRight: "10px", cursor: "pointer" }}
-											>
-												+
-											</span>
-											{urun.urun.productName}
-											<span
-												onClick={() => sepetguncelle(urun.urun, "azalt")}
-												style={{ marginLeft: "10px", cursor: "pointer" }}
-											>
-												-
-											</span>
-										</DropdownItem>
-									))}
-									<DropdownItem divider />
-									<DropdownItem>Sıfırla</DropdownItem>
-								</DropdownMenu>
-							</UncontrolledDropdown>
-						</Nav>
-					</Collapse>
-				</Navbar>
-				<Row>
-					<Col xs="3">
-						<ListGroup>
-							{kategoriler.map((kategori) => (
-								<ListGroupItem
-									active={kategori.categoryName === secilikategori}
-									key={kategori.id}
-									onClick={() => kategoridegister(kategori)}
-								>
-									{kategori.categoryName}
-								</ListGroupItem>
-							))}
-						</ListGroup>
-					</Col>
-					<Col xs="9">
-						<h2>{secilikategori}</h2>
-						<CardGroup>
-							{urunler.map((urun) => (
-								<Col xs="3" key={urun.id}>
-									<Card style={{ marginLeft: "10px", marginRight: "10px" }}>
-										<CardImg
-											top
-											width="100%"
-											src={urun.image}
-											alt={urun.productName}
-										/>
-										<CardBody>
-											<CardTitle>{urun.productName}</CardTitle>
-											<CardText>{urun.desc}</CardText>
-											<Button onClick={() => sepeteEkle(urun)}>
-												Sepete Ekle
-											</Button>
-										</CardBody>
-									</Card>
-								</Col>
-							))}
-						</CardGroup>
-					</Col>
-				</Row>
-			</Container>
-		</>
+		<Container fluid>
+			<Ust
+				sepet={sepet}
+				sepetguncelle={sepetguncelle}
+				sepetSifirla={sepetSifirla}
+				toggle={toggle}
+				isOpen={isOpen}
+			/>
+			<Row>
+				<Col xs="3">
+					<Kategoriler
+						kategoriler={kategoriler}
+						kategoridegister={kategoridegister}
+						secilikategori={secilikategori}
+					/>
+				</Col>
+				<Col xs="9">
+					<Urunler
+						urunler={urunler}
+						sepeteEkle={sepeteEkle}
+						secilikategori={secilikategori}
+					/>
+				</Col>
+			</Row>
+		</Container>
 	);
 }
 
