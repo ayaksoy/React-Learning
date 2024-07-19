@@ -8,7 +8,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
 	<React.StrictMode>
-		<Provider>
+		<Provider store={store}>
 			<Router>
 				<App />
 			</Router>

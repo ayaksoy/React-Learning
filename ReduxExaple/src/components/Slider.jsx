@@ -8,11 +8,12 @@ import {
 	CarouselIndicators,
 	CarouselCaption,
 } from "reactstrap";
-export default function () {
+
+export default function Slider() {
 	const dispatch = useDispatch();
-	const slides = useSelector((state) => state.slider.sliders);
-	const slideStatus = useSelector((state) => state.slider.status);
-	const error = useSelector((state) => state.slider.error);
+	const slides = useSelector((state) => state.sliders.sliders);
+	const slideStatus = useSelector((state) => state.sliders.status);
+	const error = useSelector((state) => state.sliders.error);
 	const [activeIndex, setActiveIndex] = React.useState(0);
 	const [animating, setAnimating] = React.useState(false);
 
@@ -38,6 +39,14 @@ export default function () {
 		if (animating) return;
 		setActiveIndex(newIndex);
 	};
+
+	if (slideStatus === "loading") {
+		return <div>Loading...</div>;
+	}
+
+	if (slideStatus === "failed") {
+		return <div>Error: {error}</div>;
+	}
 
 	const slidesItems = slides.map((item) => {
 		return (
