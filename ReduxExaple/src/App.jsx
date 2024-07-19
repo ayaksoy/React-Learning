@@ -13,24 +13,26 @@ import Contact from "./components/Contact";
 import Categories from "./components/Categories";
 
 function App() {
-	return <div className="App">
-    <Topbar />
-    <Header />
-    <Menu />
-    <Routes>
-      <Route path="/" element={<Slider />} />
-      <Route path="product" element={<Product />} />
-      <Route path="categories" element={<Categories />} />
-      <Route path="product/:id" element={<ProductDetail />} />
-      <Route path="cart" element={<Cart />} />
-      <Route path="checkout" element={<Checkout />} />
-      <Route path="about" element={<About />} />
-      <Route path="contact" element={<Contact />} />
-    </Routes>
+	return (
+		<div className="App">
+			<Topbar />
+			<Header />
+			<Menu />
 
+			<Routes>
+				<Route path="/" element={<Slider />} />
+				<Route path="product" element={<Product />} />
+				<Route path="categories" element={<Categories />} />
+				<Route path="product/:id" element={<ProductDetail />} />
+				<Route path="cart" element={<Cart />} />
+				<Route path="checkout" element={<Checkout />} />
+				<Route path="about" element={<About />} />
+				<Route path="contact" element={<Contact />} />
+			</Routes>
 
-
-  </div>;
+			<Footer />
+		</div>
+	);
 }
 
 export default App;
