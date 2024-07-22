@@ -6,7 +6,7 @@ export default function Faq() {
 		<>
 			<Hero title="Faq" />
 			<div className="faq-page pt-100 pb-70">
-				<div className="container">
+				<div className="container asd">
 					<div className="row">
 						<div className="col-md-6 col-sm-6">
 							<div className="faq-sec">
