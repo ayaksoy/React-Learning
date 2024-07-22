@@ -1,7 +1,7 @@
 import React from "react";
 import Hero from "../components/Hero";
 
-export default function ServiceDetail() {
+export default function ServiceDetail(props) {
 	return (
 		<div>
 			<Hero title="Service Detail" />

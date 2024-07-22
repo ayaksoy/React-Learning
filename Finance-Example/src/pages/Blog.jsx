@@ -2,7 +2,7 @@ import React from "react";
 import Hero from "../components/Hero";
 import BlogCard from "../components/BlogCard";
 
-export default function Blog() {
+export default function Blog(props) {
 	return (
 		<div>
 			<Hero title="Blog" />
@@ -10,9 +10,9 @@ export default function Blog() {
 				<div className="container">
 					<div className="row">
 						<div className="col-md-8">
-							<BlogCard />
-							<BlogCard />
-							<BlogCard />
+							{props.blog.map((item) => (
+								<BlogCard blog={item} getBlogById={props.getBlogById} />
+							))}
 							<div className="pagination custom-pagination">
 								<ul className="pagination custom-pagination">
 									<li className="active">

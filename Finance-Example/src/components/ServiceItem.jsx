@@ -1,16 +1,17 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-export default function ServiceItem() {
+export default function ServiceItem(props) {
 	return (
 		<div className="service-item">
 			<div className="col-md-4 col-sm-6 inner">
 				<div className="media">
 					<div className="service-thumb">
-						<a href="service-details.html">
+						<Link to={`/service/${props.service.id}`}>
 							<img src="img/s6.jpg" alt />
-						</a>
+						</Link>
 						<div className="service-icon">
-							<a href="service-details.html">Learn More</a>
+							<Link to={`/service/${props.service.id}`}>Learn More</Link>
 						</div>
 					</div>
 					<div className="service-inner-text">
@@ -21,7 +22,9 @@ export default function ServiceItem() {
 						</div>
 						<div className="media-body">
 							<h2>
-								<a href="service-details.html">Startup business</a>
+								<Link to={`/service/${props.service.id}`}>
+									{props.service.name}
+								</Link>
 							</h2>
 							<p>Lorem ipsum dolor sit amet, ligula magna at etiam aliquip.</p>
 						</div>

@@ -1,6 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-export default function BlogCard() {
+export default function BlogCard(props) {
 	return (
 		<div className="media">
 			<div className="single-post">
@@ -10,19 +11,21 @@ export default function BlogCard() {
 						<div className="post-meta">
 							<ul>
 								<li>
-									<a href>
-										<i className="fa fa-user"></i>Admin
-									</a>
+									<Link>
+										<i className="fa fa-user"></i>
+										{props.blog.author}
+									</Link>
 								</li>
 								<li>
-									<a href>
-										<i className="fa fa-calendar"></i>1 jan 2018
-									</a>
+									<Link>
+										<i className="fa fa-calendar"></i>
+										{props.blog.date}
+									</Link>
 								</li>
 								<li>
-									<a href>
+									<Link>
 										<i className="fa fa-comment-o"></i>32
-									</a>
+									</Link>
 								</li>
 							</ul>
 						</div>
@@ -30,21 +33,12 @@ export default function BlogCard() {
 				</div>
 				<div className="single-post-text">
 					<h2>
-						<a href="blog-details.html">
-							Augue docendi signiferumque an cum. Te meliore definiebas.
-						</a>
+						<Link to={`/blog/${props.blog.id}`}>{props.blog.title}</Link>
 					</h2>
-					<p>
-						Lorem ipsum dolor sit amet, sit ex facer epicurei, vis graeci
-						nominati delicata In eos laoreet referrentur eam ad nostro
-						intellegebat. integre tibique usu, vel amet instructior ea. Mei
-						tantas propriae placerat ad, no dicm iracundia mei lorem doldummy
-						text..Marketing Strategy Lorem ipsum dolor sit amet, te velit
-						accumsan adolescens eum, epicuri deserunt.
-					</p>
-					<a href="blog-details.html" className="blog-readmore">
+					<p>{props.blog.content}</p>
+					<Link to={`/blog/${props.blog.id}`} className="blog-readmore">
 						Continue reading...
-					</a>
+					</Link>
 				</div>
 			</div>
 		</div>
