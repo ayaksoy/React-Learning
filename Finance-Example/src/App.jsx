@@ -33,6 +33,7 @@ function App() {
 					<Route path="/service" element={<Service />} />
 					<Route path="/service:id" element={<ServiceDetail />} />
 					<Route path="*" element={<NotFound />} />
+					
 				</Routes>
 			<Footer />
 			</Router>
