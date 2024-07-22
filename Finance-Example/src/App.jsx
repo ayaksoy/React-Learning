@@ -9,12 +9,13 @@ import Blog from "./pages/Blog";
 import BlogDetail from "./pages/BlogDetail";
 import NotFound from "./pages/NotFound";
 import Project from "./pages/Project";
+import ProjectDetail from "./pages/ProjectDetail";
 
 function App() {
 	return (
 		<>
 			<Header />
-			<Project />
+			<ProjectDetail />
 			<Footer />
 		</>
 	);
