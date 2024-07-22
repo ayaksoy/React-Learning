@@ -5,7 +5,7 @@ export default function Blog() {
 	return (
 		<div>
 			<Hero title="Blog" />
-			<div className="blog-sec pt-100 pb-70">
+			<div className="blog-sec pt-100 pb-70 aa">
 				<div className="container">
 					<div className="row">
 						<div className="col-md-8">
