@@ -5,12 +5,14 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Faq from "./pages/Faq";
 import Gallery from "./pages/Gallery";
+import Blog from "./pages/Blog";
+import BlogDetail from "./pages/BlogDetail";
 
 function App() {
 	return (
 		<>
 			<Header />
-			<Gallery />
+			<BlogDetail />
 			<Footer />
 		</>
 	);
