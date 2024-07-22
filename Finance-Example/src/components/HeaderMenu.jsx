@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function HeaderMenu() {
 	return (
@@ -6,63 +7,25 @@ export default function HeaderMenu() {
 			<nav id="main-menu" className="main-menu">
 				<ul>
 					<li className="active">
-						<a href="index.html">home</a>
+						<Link to="/">Home</Link>
 					</li>
 					<li>
-						<a href="service.html">services</a>
-						<ul>
-							<li>
-								<a href="service.html">Service Page</a>
-							</li>
-							<li>
-								<a href="service-details.html">Service Details</a>
-							</li>
-						</ul>
+						<Link to="/about">About</Link>
 					</li>
 					<li>
-						<a href="project.html">Project</a>
-						<ul>
-							<li>
-								<a href="project.html">Project Page</a>
-							</li>
-							<li>
-								<a href="project-details.html">Project Details</a>
-							</li>
-						</ul>
+						<Link to="/project">Projects</Link>
 					</li>
 					<li>
-						<a href="#">Page</a>
-						<ul>
-							<li>
-								<a href="about.html">about us</a>
-							</li>
-							<li>
-								<a href="gallery.html">gallery Page</a>
-							</li>
-							<li>
-								<a href="employees.html">employees Page</a>
-							</li>
-							<li>
-								<a href="faq.html">faq Page</a>
-							</li>
-							<li>
-								<a href="404.html">404 Page</a>
-							</li>
-						</ul>
+						<Link to="/service">Services</Link>
 					</li>
 					<li>
-						<a href="blog.html">blog</a>
-						<ul>
-							<li>
-								<a href="blog.html">blog</a>
-							</li>
-							<li>
-								<a href="blog-details.html">blog Details</a>
-							</li>
-						</ul>
+						<Link to="/gallery">Gallery</Link>
 					</li>
 					<li>
-						<a href="contact.html">Contact</a>
+						<Link to="/contact">Contact</Link>
+					</li>
+					<li>
+						<Link to="/blog">Blog</Link>
 					</li>
 				</ul>
 			</nav>

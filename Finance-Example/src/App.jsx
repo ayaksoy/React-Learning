@@ -13,13 +13,20 @@ import ProjectDetail from "./pages/ProjectDetail";
 import Service from "./pages/Service";
 import ServiceDetail from "./pages/ServiceDetail";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { useState } from "react";
 
 function App() {
+	const [blog, setBlog] = useState([]);
+	const [gallery, setGallery] = useState([]);
+	const [project, setProject] = useState([]);
+	const [service, setService] = useState([]);
 	return (
 		<>
-
+			<div id="preloader">
+				<div id="preloader-status"></div>
+			</div>
 			<Router>
-			<Header />
+				<Header />
 				<Routes>
 					<Route path="/" element={<Main />} />
 					<Route path="/about" element={<About />} />
@@ -33,11 +40,9 @@ function App() {
 					<Route path="/service" element={<Service />} />
 					<Route path="/service:id" element={<ServiceDetail />} />
 					<Route path="*" element={<NotFound />} />
-					
 				</Routes>
-			<Footer />
+				<Footer />
 			</Router>
-
 		</>
 	);
 }

@@ -4,7 +4,7 @@ import Hero from "../components/Hero";
 export default function About() {
 	return (
 		<>
-			<Hero />
+			<Hero title="About Us" />
 			<div className="about-us-sec pt-100 pb-70">
 				<div className="container">
 					<div className="row">
