@@ -8,12 +8,13 @@ import Gallery from "./pages/Gallery";
 import Blog from "./pages/Blog";
 import BlogDetail from "./pages/BlogDetail";
 import NotFound from "./pages/NotFound";
+import Project from "./pages/Project";
 
 function App() {
 	return (
 		<>
 			<Header />
-			<NotFound />
+			<Project />
 			<Footer />
 		</>
 	);
