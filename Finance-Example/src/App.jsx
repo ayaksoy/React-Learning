@@ -7,12 +7,13 @@ import Faq from "./pages/Faq";
 import Gallery from "./pages/Gallery";
 import Blog from "./pages/Blog";
 import BlogDetail from "./pages/BlogDetail";
+import NotFound from "./pages/NotFound";
 
 function App() {
 	return (
 		<>
 			<Header />
-			<BlogDetail />
+			<NotFound />
 			<Footer />
 		</>
 	);

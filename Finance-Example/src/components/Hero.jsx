@@ -8,7 +8,7 @@ export default function Hero(props) {
 				<div className="row">
 					<div className="col-md-12">
 						<div className="page-heading">
-							<h1>{props.title}</h1>
+							<h1>{props.title} Page</h1>
 						</div>
 						<div className="breadcrumb-list">
 							<ul>
