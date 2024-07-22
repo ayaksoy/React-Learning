@@ -11,12 +11,13 @@ import NotFound from "./pages/NotFound";
 import Project from "./pages/Project";
 import ProjectDetail from "./pages/ProjectDetail";
 import Service from "./pages/Service";
+import ServiceDetail from "./pages/ServiceDetail";
 
 function App() {
 	return (
 		<>
 			<Header />
-			<Service />
+			<ServiceDetail />
 			<Footer />
 		</>
 	);
