@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Hero() {
+export default function Hero(props) {
 	return (
 		<div className="pagehding-sec">
 			<div className="images-overlay"></div>
@@ -8,7 +8,7 @@ export default function Hero() {
 				<div className="row">
 					<div className="col-md-12">
 						<div className="page-heading">
-							<h1>About Us</h1>
+							<h1>{props.title}</h1>
 						</div>
 						<div className="breadcrumb-list">
 							<ul>
@@ -16,7 +16,7 @@ export default function Hero() {
 									<a href="index.html">Home</a>
 								</li>
 								<li>
-									<a href>about us</a>
+									<a href>{props.title}</a>
 								</li>
 							</ul>
 						</div>

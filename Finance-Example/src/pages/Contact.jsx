@@ -15,7 +15,7 @@ export default function Contact() {
 									width="100%"
 									height="350"
 									frameborder="0"
-									style="border:0"
+									style={{ border: 0 }}
 									allowfullscreen
 								></iframe>
 							</div>
