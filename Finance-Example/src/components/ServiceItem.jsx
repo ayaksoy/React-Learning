@@ -2,6 +2,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 export default function ServiceItem(props) {
+	if (!props.service) {
+		return <div>Loading...</div>; // veya bir hata mesajı
+	}
 	return (
 		<div className="service-item">
 			<div className="col-md-4 col-sm-6 inner">

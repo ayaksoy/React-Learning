@@ -58,42 +58,37 @@ function App() {
 		return service.find((service) => service.id === id);
 	};
 	return (
-		<>
-			<div id="preloader">
-				<div id="preloader-status"></div>
-			</div>
-			<Router>
-				<Header />
-				<Routes>
-					<Route path="/" element={<Main />} />
-					<Route path="/about" element={<About />} />
-					<Route path="/contact" element={<Contact />} />
-					<Route path="/faq" element={<Faq />} />
-					<Route path="/gallery" element={<Gallery gallery={gallery} />} />
-					<Route
-						path="/blog"
-						element={<Blog blog={blog} getBlogById={getBlogById} />}
-					/>
-					<Route path="/blog/:id" element={<BlogDetail />} />
-					<Route
-						path="/project"
-						element={
-							<Project project={project} getProjectById={getProjectById} />
-						}
-					/>
-					<Route path="/project:id" element={<ProjectDetail />} />
-					<Route
-						path="/service"
-						element={
-							<Service service={service} getServiceById={getServiceById} />
-						}
-					/>
-					<Route path="/service:id" element={<ServiceDetail />} />
-					<Route path="*" element={<NotFound />} />
-				</Routes>
-				<Footer />
-			</Router>
-		</>
+		<Router>
+			<Header />
+			<Routes>
+				<Route path="/" element={<Main />} />
+				<Route path="/about" element={<About />} />
+				<Route path="/contact" element={<Contact />} />
+				<Route path="/faq" element={<Faq />} />
+				<Route path="/gallery" element={<Gallery gallery={gallery} />} />
+				<Route
+					path="/blog"
+					element={<Blog blog={blog} getBlogById={getBlogById} />}
+				/>
+				<Route path="/blog/:id" element={<BlogDetail />} />
+				<Route
+					path="/project"
+					element={
+						<Project project={project} getProjectById={getProjectById} />
+					}
+				/>
+				<Route path="/project:id" element={<ProjectDetail />} />
+				<Route
+					path="/service"
+					element={
+						<Service service={service} getServiceById={getServiceById} />
+					}
+				/>
+				<Route path="/service:id" element={<ServiceDetail />} />
+				<Route path="*" element={<NotFound />} />
+			</Routes>
+			<Footer />
+		</Router>
 	);
 }
 

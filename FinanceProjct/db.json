@@ -1,0 +1,213 @@
+{
+  "blog": [
+    {
+      "id": 1,
+      "title": "First Blog Post",
+      "content": "This is the content of the first blog post.",
+      "author": "John Doe",
+      "date": "2024-07-22",
+      "image": "http://example.com/blog1.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Second Blog Post",
+      "content": "This is the content of the second blog post.",
+      "author": "Jane Doe",
+      "date": "2024-07-23",
+      "image": "http://example.com/blog2.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Third Blog Post",
+      "content": "This is the content of the third blog post.",
+      "author": "John Doe",
+      "date": "2024-07-24",
+      "image": "http://example.com/blog3.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Fourth Blog Post",
+      "content": "This is the content of the fourth blog post.",
+      "author": "Jane Doe",
+      "date": "2024-07-25",
+      "image": "http://example.com/blog4.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Fifth Blog Post",
+      "content": "This is the content of the fifth blog post.",
+      "author": "John Doe",
+      "date": "2024-07-26",
+      "image": "http://example.com/blog5.jpg"
+    },
+    {
+      "id": 6,
+      "title": "Sixth Blog Post",
+      "content": "This is the content of the sixth blog post.",
+      "author": "Jane Doe",
+      "date": "2024-07-27",
+      "image": "http://example.com/blog6.jpg"
+    },
+    {
+      "id": 7,
+      "title": "Seventh Blog Post",
+      "content": "This is the content of the seventh blog post.",
+      "author": "John Doe",
+      "date": "2024-07-28",
+      "image": "http://example.com/blog7.jpg"
+    }
+  ],
+  "project": [
+    {
+      "id": 1,
+      "name": "Project A",
+      "description": "Description of Project A.",
+      "status": "In Progress",
+      "startDate": "2024-07-01",
+      "endDate": "2024-12-31",
+      "image": "http://example.com/project1.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Project B",
+      "description": "Description of Project B.",
+      "status": "Completed",
+      "startDate": "2023-01-01",
+      "endDate": "2023-06-30",
+      "image": "http://example.com/project2.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Project C",
+      "description": "Description of Project C.",
+      "status": "In Progress",
+      "startDate": "2024-08-01",
+      "endDate": "2025-01-31",
+      "image": "http://example.com/project3.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Project D",
+      "description": "Description of Project D.",
+      "status": "In Progress",
+      "startDate": "2024-09-01",
+      "endDate": "2025-02-28",
+      "image": "http://example.com/project4.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Project E",
+      "description": "Description of Project E.",
+      "status": "Completed",
+      "startDate": "2022-07-01",
+      "endDate": "2022-12-31",
+      "image": "http://example.com/project5.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Project F",
+      "description": "Description of Project F.",
+      "status": "In Progress",
+      "startDate": "2024-10-01",
+      "endDate": "2025-03-31",
+      "image": "http://example.com/project6.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Project G",
+      "description": "Description of Project G.",
+      "status": "In Progress",
+      "startDate": "2024-11-01",
+      "endDate": "2025-04-30",
+      "image": "http://example.com/project7.jpg"
+    }
+  ],
+  "service": [
+    {
+      "id": 1,
+      "name": "Service A",
+      "description": "Description of Service A.",
+      "image": "http://example.com/service1.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Service B",
+      "description": "Description of Service B.",
+      "image": "http://example.com/service2.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Service C",
+      "description": "Description of Service C.",
+      "image": "http://example.com/service3.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Service D",
+      "description": "Description of Service D.",
+      "image": "http://example.com/service4.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Service E",
+      "description": "Description of Service E.",
+      "image": "http://example.com/service5.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Service F",
+      "description": "Description of Service F.",
+      "image": "http://example.com/service6.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Service G",
+      "description": "Description of Service G.",
+      "image": "http://example.com/service7.jpg"
+    }
+  ],
+  "gallery": [
+    {
+      "id": 1,
+      "title": "Gallery Image 1",
+      "url": "http://example.com/gallery1.jpg",
+      "description": "Description of Gallery Image 1."
+    },
+    {
+      "id": 2,
+      "title": "Gallery Image 2",
+      "url": "http://example.com/gallery2.jpg",
+      "description": "Description of Gallery Image 2."
+    },
+    {
+      "id": 3,
+      "title": "Gallery Image 3",
+      "url": "http://example.com/gallery3.jpg",
+      "description": "Description of Gallery Image 3."
+    },
+    {
+      "id": 4,
+      "title": "Gallery Image 4",
+      "url": "http://example.com/gallery4.jpg",
+      "description": "Description of Gallery Image 4."
+    },
+    {
+      "id": 5,
+      "title": "Gallery Image 5",
+      "url": "http://example.com/gallery5.jpg",
+      "description": "Description of Gallery Image 5."
+    },
+    {
+      "id": 6,
+      "title": "Gallery Image 6",
+      "url": "http://example.com/gallery6.jpg",
+      "description": "Description of Gallery Image 6."
+    },
+    {
+      "id": 7,
+      "title": "Gallery Image 7",
+      "url": "http://example.com/gallery7.jpg",
+      "description": "Description of Gallery Image 7."
+    }
+  ]
+}

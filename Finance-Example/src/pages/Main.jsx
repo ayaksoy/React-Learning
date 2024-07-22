@@ -7,15 +7,16 @@ import Slider from "../components/Slider";
 import Testimonial from "../components/Testimonial";
 import WhyChose from "../components/WhyChose";
 
-
 export default function Main() {
-	return <div>
-		<Slider />
-		<OurServices />
-		<WhyChose />
-		<About />
-		<Galery />
-		<Testimonial />
-		<BlogMain />
-	</div>;
+	return (
+		<div>
+			<Slider />
+			<OurServices />
+			<WhyChose />
+			<About />
+			<Galery />
+			<Testimonial />
+			<BlogMain />
+		</div>
+	);
 }
