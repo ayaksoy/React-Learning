@@ -4,7 +4,7 @@ import Hero from "../components/Hero";
 export default function NotFound() {
 	return (
 		<div>
-			<Hero title="404" />
+			<Hero title="404 Not Found" />
 			<div className="error-page-sec pt-100 pb-100">
 				<div className="container">
 					<div className="row">
