@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Gallery() {
+export default function Galery() {
 	return (
 		<div className="gallery-sec pt-100 pb-70">
 			<div className="container">
